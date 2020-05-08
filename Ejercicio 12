@@ -1,0 +1,22 @@
+#include <stdio.h>
+void intercambio (int * numero1, int * numero2){
+    int aux = *numero1;
+    *numero1 = *numero2;
+    *numero2 = aux;
+}
+int main()
+{
+    int numero1;
+    int numero2;
+    printf("Por favor, introduzca el primer numero: ");
+    scanf("\n %d", &numero1);
+    printf("Por favor, introduzca el segundo numero: ");
+    scanf("\n %d", &numero2);
+    
+    intercambio(&numero1, &numero2);
+    
+    printf("El intercambio de los numeros son : El numero 1 sería %d El numero 2 sería %d", numero1, numero2);
+    
+
+    return 0;
+}
