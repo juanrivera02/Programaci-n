@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main()
+{
+    int suma(int numero1, int numero2){
+        return numero1+numero2;
+    }
+    int resta(int numero1, int numero2){
+        return numero1-numero2;
+    }
+    int multiplicacion(int numero1,int numero2){
+        return numero1*numero2;
+    }
+    int division(int numero1, int numero2){
+        return numero1/numero2;
+    }
+    int numero1;
+    int numero2;
+    int operacion;
+    int resultado = 0;
+    
+            printf("Por favor, introduzca el primer número: ");
+            scanf("%d", &numero1);
+            printf("\n");
+        
+            printf("Por favor, introduzca el segundo número: ");
+            scanf("%d", &numero2);
+            printf("\n");
+            
+            printf("Por favor, introduzca la operación que desee realizar. 1 es la suma, 2 es la resta, 3 es la multiplicación y 4 es la división: ");
+            scanf("%d", &operacion);
+            printf("\n");
+        
+    switch (operacion){
+        case 1:
+            resultado = suma(numero1, numero2);
+            break;
+        case 2:
+            resultado = resta(numero1, numero2); 
+            break;
+        case 3: 
+            resultado =  multiplicacion(numero1,numero2);
+            break;
+        case 4:
+            resultado =  division(numero1, numero2);
+    }
+        
+            printf("El resultado es:%d" ,resultado);
+    
