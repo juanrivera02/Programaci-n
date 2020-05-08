@@ -1,0 +1,21 @@
+#include <stdio.h> #include <string.h>
+
+int main()
+{
+    char cadena[100];
+    int numero1;
+    
+            printf("Introduzca la palabra que usted quiera, por favor: ");
+            scanf("%s", cadena);
+   
+    int i = strlen(cadena)-1;
+            printf("La palabra escrita al contrario es:");
+        for (numero1=i; numero1>=0; numero1--){
+            printf("%c", cadena[numero1]);
+    }
+
+        return 0;
+}
+
+
+
