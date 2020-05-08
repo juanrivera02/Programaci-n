@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int numero1;
+    
+    printf("Si quieres saber lo que tienes que hacer en cada color de los semáforos, introduzca uno de los números siguientes. 1 es el rojo, 2 es el ámbar, 3 es el verde:");
+    scanf("%d", &numero1);
+    printf("\n");
+    switch (numero1){
+        case 1: 
+            printf("No debo pasar");
+            break;
+        case 2:
+            printf("Puedo pasar con cuidado");
+            break;
+        case 3: 
+            printf("Puedo pasar");
+            break;
+    }
+    
+    
+    
+
+    return 0;
+}
