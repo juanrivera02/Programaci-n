@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int anyo;
+        printf("Por favor, introduzca el año: ");
+        scanf("%d", &anyo);
+        printf("\n");
+        
+    if(anyo % 4 == 0 && !(anyo%100==0 && !anyo%400!=0)){
+        printf("El año es bisiesto");
+    }
+    
+    else{
+        printf("El año no es bisiesto");
+    }
+    
+
+    return 0;
+}
